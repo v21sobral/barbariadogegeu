@@ -1,0 +1,101 @@
+/* Aqui começa o Root css */
+
+:root{
+
+    --pretoso: #0a121a;
+    --marromcafe: #ffd95c;
+    --azulmar: #c0c0c0;
+    --douradation: #C5A059;
+    --branneve: #FFFFFF;
+    --cinzatitulo: #333333;
+
+}
+
+/* ------------------------------------------------------------ */
+
+/* Virtualização */
+
+@font-face {
+    font-family: Getla;
+    src: url(/fonts/Getla.otf);
+    font-family:  Milk;
+    src: url(/fonts/MilkCream.otf);
+}
+
+body {
+  background-color: var(--pretoso);
+  background-image: url("../imagens/navalhagegeu.png");
+  background-repeat: no-repeat;
+  background-position: 30% 0%;
+  background-size: 11%;
+  
+}
+
+
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    color: var(--marromcafe);
+    font-family: Getla;
+    margin-bottom: -10px;
+    
+}
+
+h2{
+
+    font-size: 28px;
+    text-align: center;
+    color: var(--azulmar);
+    font-family: Milk;
+    margin-bottom: 50px;
+}
+
+hr{
+    width: 70%;
+    height: 2px;
+    background: var(--douradation);
+}
+
+p{
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    color: var(--branneve);
+    font-size: 22px;
+}
+
+img{
+
+    height: 420px;
+    border-radius: 0px;
+    filter: blur(2px) grayscale(100%);
+    margin: 25px;
+
+    &:hover{
+        filter: blur(0px) grayscale(0%) ;
+        border-radius: 8px;
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out ;
+
+    }
+
+}
+.displaycaixinha{
+    width: fit-content;
+    margin: auto;
+}
+
+
+video{
+    width: 50%;
+    margin: 35px auto;
+    display: block;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Alinha o texto verticalmente no centro */
+    gap: 15px; /* Cria um espaço entre a imagem e o texto */
+    margin-left: 15px;
+}
