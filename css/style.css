@@ -70,7 +70,7 @@ img{
     height: 420px;
     border-radius: 0px;
     filter: blur(2px) grayscale(100%);
-    margin: 25px;
+    margin: 15px;
 
     &:hover{
         filter: blur(0px) grayscale(0%) ;
