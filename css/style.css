@@ -53,8 +53,9 @@ h2{
 
 hr{
     width: 70%;
-    height: 2px;
-    background: var(--douradation);
+    height: 4px;
+    background-color: var(--douradation);
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) inset;
 }
 
 p{
@@ -67,23 +68,40 @@ p{
 
 img{
 
-    height: 420px;
-    border-radius: 0px;
+    height: 410px;
+    border: 2px solid var(--douradation); /* Borda inicial discreta */
+    border-radius: 8px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     filter: blur(2px) grayscale(100%);
+<<<<<<< HEAD
     margin: 15px;
+=======
+    margin: 20px;
+>>>>>>> 2fca271 (gegeu animated)
 
     &:hover{
         filter: blur(0px) grayscale(0%) ;
         border-radius: 8px;
         transform: scale(1.1);
         transition: 0.5s ease-in-out ;
+        transform: matrix(1.05, 0, -0.05, 1.05, 0, 0);
+
+        border-color: var(--douradation);
+
+    
+        box-shadow: 0 0 10px var(--douradation),
+                    0 0 20px var(--douradation),
+                    inset 0 0 15px var(--douradation);
 
     }
+
+    
 
 }
 .displaycaixinha{
     width: fit-content;
     margin: auto;
+    perspective: 800px;
 }
 
 
@@ -91,6 +109,22 @@ video{
     width: 50%;
     margin: 35px auto;
     display: block;
+    transition: transform 0.5s ease-out;
+    border: 1px solid var(--douradation);
+    
+    
+
+    &:hover{
+        transform: matrix(1.05, 0, -0.01, 1.05, 0, 0);
+
+        border-color: var(--douradation);
+
+    
+        box-shadow: 0 0 10px var(--douradation),
+                    0 0 20px var(--douradation),
+                    inset 0 0 15px var(--douradation);
+        
+    }
 }
 
 .container {
