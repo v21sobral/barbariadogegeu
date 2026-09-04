@@ -23,12 +23,12 @@
 }
 
 body {
-  background-color: var(--pretoso);
-  background-image: url("../imagens/gegeuanimated.gif");
-  background-repeat: no-repeat;
-  background-position: 25% 0%;
-  background-size: 11%;
-  
+    background-color: var(--pretoso);
+    background-image: url("../imagens/gegeuanimated.gif");
+    background-repeat: no-repeat;
+    background-position: 25% 0%;
+    background-size: 11%;
+
 }
 
 
@@ -73,11 +73,7 @@ img{
     border-radius: 8px;
     transition: transform 0.5s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     filter: blur(2px) grayscale(100%);
-<<<<<<< HEAD
     margin: 15px;
-=======
-    margin: 20px;
->>>>>>> 2fca271 (gegeu animated)
 
     &:hover{
         filter: blur(0px) grayscale(0%) ;
